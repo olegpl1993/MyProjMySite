@@ -1,0 +1,607 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Arial";
+  position: relative;
+  background-color: #7660ff;
+}
+
+.wraper {
+  width: 100%;
+}
+
+.background__block1 {
+  position: absolute;
+  width: 80%;
+  height: 450px;
+  left: 0px;
+  top: 345px;
+  background: rgba(242, 175, 175, 0.3);
+  border: 1px solid #000000;
+  z-index: -1;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  -webkit-animation-name: anime-block1;
+          animation-name: anime-block1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes anime-block1 {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes anime-block1 {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.background__block2 {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  left: 0px;
+  top: 1000px;
+  background: rgba(242, 175, 175, 0.3);
+  border: 1px solid #000000;
+  z-index: -1;
+  -webkit-animation-name: anime-block2;
+          animation-name: anime-block2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes anime-block2 {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 450px;
+  }
+}
+
+@keyframes anime-block2 {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 450px;
+  }
+}
+
+.background__block3 {
+  position: absolute;
+  width: 80%;
+  height: 450px;
+  right: 0;
+  top: 1680px;
+  background: rgba(242, 175, 175, 0.3);
+  border: 1px solid #000000;
+  z-index: -1;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  -webkit-animation-name: anime-block3;
+          animation-name: anime-block3;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes anime-block3 {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes anime-block3 {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  margin-bottom: 10px;
+  background-color: #9a77e1;
+  border: 1px solid black;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px;
+}
+
+.logo-box {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 25px;
+}
+
+.logo-box p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  text-transform: uppercase;
+  top: 2px;
+  left: 5px;
+  position: absolute;
+  -webkit-animation-name: logo-box;
+          animation-name: logo-box;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.logo-box p a {
+  color: #000;
+}
+
+@-webkit-keyframes logo-box {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 2px;
+  }
+}
+
+@keyframes logo-box {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 2px;
+  }
+}
+
+.logo-txt p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #000;
+  letter-spacing: 1px;
+  -webkit-animation-name: logo-txt;
+          animation-name: logo-txt;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes logo-txt {
+  from {
+    letter-spacing: 500px;
+  }
+  to {
+    letter-spacing: 1px;
+  }
+}
+
+@keyframes logo-txt {
+  from {
+    letter-spacing: 500px;
+  }
+  to {
+    letter-spacing: 1px;
+  }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  background: #1a5e92;
+  border: 2px solid #1a5e92;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.button:hover {
+  border: 2px solid black;
+}
+
+.button a {
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .logo-txt {
+    display: none;
+  }
+  .button {
+    padding: 15px;
+    width: 260px;
+    height: 60px;
+    border-radius: 0px;
+  }
+  .button a {
+    font-size: 25px;
+  }
+}
+
+.main {
+  opacity: 1;
+  -webkit-animation-name: designe-flash;
+          animation-name: designe-flash;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes designe-flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes designe-flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+.box {
+  padding-top: 120px;
+  margin-bottom: 80px;
+}
+
+.box-row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000;
+}
+
+.column-design {
+  text-align: center;
+}
+
+.column-design p {
+  -webkit-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
+}
+
+.column-developing {
+  text-align: center;
+}
+
+.column-developing p {
+  margin-bottom: 20px;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000;
+  margin-bottom: 30px;
+}
+
+.portfolio-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.portfolio-column {
+  width: 400px;
+  height: 300px;
+  background: #1a5e92;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  text-align: center;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000;
+  margin-bottom: 30px;
+}
+
+.about-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-column {
+  padding: 30px 50px;
+  width: 600px;
+  background: #1a5e92;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.about-column p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.contacts {
+  color: #ffffff;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.contacts-title {
+  text-align: center;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  color: #ffffff;
+  -webkit-text-stroke: 2px #000;
+  margin-bottom: 30px;
+}
+
+.contacts-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-colum {
+  padding: 30px 50px;
+  width: 100%;
+  background: #1a5e92;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.contacts-colum p {
+  margin: 10px 0px;
+}
+
+.form-name {
+  height: 35px;
+  width: 350px;
+  border: 1px solid black;
+}
+
+.form-mail {
+  height: 35px;
+  width: 350px;
+  border: 1px solid black;
+}
+
+.form-txt {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid black;
+}
+
+.contacts-button {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  width: 150px;
+  height: 40px;
+  background: #ffffff;
+  border: 2px solid #1a5e92;
+  border-radius: 100px;
+  margin-right: 10px;
+  color: #1a5e92;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts-button:hover {
+  border: 2px solid black;
+}
+
+.footer__box {
+  width: 100%;
+  height: 55px;
+  background-color: #9a77e1;
+  border: 1px solid black;
+}
+
+.footer__text {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+}
