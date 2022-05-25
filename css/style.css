@@ -274,7 +274,6 @@ body._lock {
   font-size: 50px;
   color: #ffffff;
   text-transform: uppercase;
-  -webkit-text-stroke: 2px #000;
   letter-spacing: 1px;
   -webkit-animation-name: logo-txt;
           animation-name: logo-txt;
@@ -406,7 +405,6 @@ body._lock {
   font-weight: 700;
   font-size: 50px;
   color: #ffffff;
-  -webkit-text-stroke: 2px #000;
 }
 
 .column-design {
@@ -414,8 +412,7 @@ body._lock {
 }
 
 .column-design p {
-  -webkit-transform: translate(0px, 100px);
-          transform: translate(0px, 100px);
+  margin-bottom: 20px;
 }
 
 .column-developing {
@@ -433,7 +430,6 @@ body._lock {
   font-weight: 700;
   font-size: 45px;
   color: #ffffff;
-  -webkit-text-stroke: 2px #000;
   margin-bottom: 30px;
 }
 
@@ -449,8 +445,8 @@ body._lock {
 
 .portfolio-col {
   padding: 50px;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   background-color: #1a5e92;
   border: 1px solid black;
   border-radius: 50px;
@@ -474,7 +470,7 @@ body._lock {
   font-weight: 700;
   background-color: #1a5e92;
   border-radius: 20px;
-  margin-left: 33px;
+  margin-left: 15px;
 }
 
 .carousel-item a:hover {
@@ -492,7 +488,7 @@ body._lock {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid black;
-  margin-top: 200px;
+  margin-top: 180px;
 }
 
 .about-title {
@@ -502,7 +498,6 @@ body._lock {
   font-weight: 700;
   font-size: 45px;
   color: #ffffff;
-  -webkit-text-stroke: 2px #000;
   margin-bottom: 30px;
 }
 
@@ -552,7 +547,6 @@ body._lock {
   font-weight: 700;
   font-size: 45px;
   color: #ffffff;
-  -webkit-text-stroke: 2px #000;
   margin-bottom: 30px;
 }
 
