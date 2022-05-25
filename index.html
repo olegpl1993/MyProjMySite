@@ -2,10 +2,12 @@
 <html lang="ru">
 
 <head>
-	<title>Создание и продвижение сайтов - MARKER</title>
-	<link rel="stylesheet" href="css/style.css" />
+	<title>MARKER</title>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" href="/img/favicon.ico">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -18,12 +20,26 @@
 		<div class="header">
 			<div class="logo">
 				<div class="logo-box">
-					<p><a href="#">m</a></p>
+					<p><a class="logo-link" href="#">m</a></p>
 				</div>
 				<div class="logo-txt">
 					<p>marker</p>
 				</div>
 			</div>
+
+			<!-----------Меню бургер---------->
+			<div class="menu__icon">
+				<span></span>
+			</div>
+			<div class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__list__li"><a href="#portfolio">портфолио</a></li>
+					<li class="menu__list__li"><a href="#about">о нас</a></li>
+					<li class="menu__list__li"><a href="#contacts">контакты</a></li>
+				</ul>
+			</div>
+			<!-------------------------------->
+
 			<div class="menu">
 				<div class="button">
 					<p><a href="#portfolio">портфолио</a></p>
@@ -53,9 +69,55 @@
 				<div class="portfolio">
 					<p class="portfolio-title"><a name="portfolio"></a> Только индивидуальные решения, С ГАРАНТИЕЙ!</p>
 					<div class="portfolio-row">
-						<div class="portfolio-column"></div>
-						<div class="portfolio-column"></div>
-						<div class="portfolio-column"></div>
+						<div class="portfolio-col">
+
+							<!-------Карусель картинок bootstrap5------->
+							<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="img/img1.png" class="d-block w-100" alt="img1">
+										<div class="carousel-caption d-none d-md-block">
+											<a class="carouselButton"
+												href="https://olegpl1993.github.io/MyProjNoughtsAndCrosses/">Крестики
+												нолики</a>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="img/img2.png" class="d-block w-100" alt="img2">
+										<div class="carousel-caption d-none d-md-block">
+											<a class="carouselButton"
+												href="https://olegpl1993.github.io/MyProjToDoList/">Список дел</a>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="img/img3.png" class="d-block w-100" alt="img3">
+										<div class="carousel-caption d-none d-md-block">
+											<a class="carouselButton"
+												href="https://olegpl1993.github.io/MyProjPaint/">Паинт</a>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="img/img4.png" class="d-block w-100" alt="img4">
+										<div class="carousel-caption d-none d-md-block">
+											<a class="carouselButton"
+												href="https://olegpl1993.github.io/MyProjCalculator2/">Калькулятор</a>
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button"
+									data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button"
+									data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+							<!---------------------------------------------------->
+
+						</div>
 					</div>
 				</div>
 				<div class="about">
@@ -85,11 +147,11 @@
 								нами. Даже если вы просто хотите поздороваться, мы с нетерпением ждём от вас сообщения!
 							</p>
 							<p>Ваше имя</p>
-							<input type="text" name="username" value="" class="form-name">
+							<input type="text" name="username"  class="form-name">
 							<p>E-mail</p>
-							<input type="email" name="mail" id="" class="form-mail">
+							<input type="email" name="mail" class="form-mail">
 							<p>Текст сообщения</p>
-							<input type="text" name="text" id="" class="form-txt">
+							<textarea  class="form-txt"></textarea>
 							<button class="contacts-button">Отправить</button>
 						</div>
 					</div>
@@ -102,6 +164,10 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
