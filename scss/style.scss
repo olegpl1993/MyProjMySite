@@ -7,7 +7,7 @@ body {
     background-color: #7660ff;
 }
 body._lock {
-overflow: hidden;
+    overflow: hidden;
 }
 
 .wraper {
@@ -167,7 +167,7 @@ overflow: hidden;
     display: none;
 }
 .menu__body {
-display: none;
+    display: none;
 }
 
 .menu {
@@ -375,6 +375,7 @@ display: none;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .contacts-colum {
     padding: 30px 50px;
     width: 100%;
@@ -388,12 +389,14 @@ display: none;
     }
 }
 
-.form-name {
-    height: 35px;
-    width: 350px;
-    border: 1px solid black;
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
+.form-name,
+.form-phone,
 .form-mail {
     height: 35px;
     width: 350px;
@@ -404,6 +407,11 @@ display: none;
     width: 100%;
     min-height: 200px;
     border: 1px solid black;
+    resize: none;
+}
+
+.button-row {
+    display: flex;
 }
 
 .contacts-button {
@@ -478,10 +486,10 @@ display: none;
     }
     .menu__icon span {
         top: 50%;
-        transform:scale(1) translate(0px, -50%);
+        transform: scale(1) translate(0px, -50%);
     }
     .menu__icon._active span {
-        transform:scale(0) translate(0px, -50%);
+        transform: scale(0) translate(0px, -50%);
     }
     .menu__icon._active::before {
         top: 50%;
@@ -507,7 +515,7 @@ display: none;
     .menu__body._active {
         left: 0;
     }
-    .menu__list a{
+    .menu__list a {
         font-size: 90px;
         color: white;
     }

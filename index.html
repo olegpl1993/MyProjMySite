@@ -142,17 +142,20 @@
 					<p class="contacts-title"><a name="contacts"></a> НАПИШИТЕ НАМ, МЫ ЖДЕМ</p>
 					<div class="contacts-row">
 						<div class="contacts-colum">
-							<form action="#" method="post" enctype="multipart/form-data"></form>
-							<p>Если есть что-то, о чем вы хотите поговорить, пожалуйста, не стесняйтесь связаться с
-								нами. Даже если вы просто хотите поздороваться, мы с нетерпением ждём от вас сообщения!
-							</p>
-							<p>Ваше имя</p>
-							<input type="text" name="username"  class="form-name">
-							<p>E-mail</p>
-							<input type="email" name="mail" class="form-mail">
-							<p>Текст сообщения</p>
-							<textarea  class="form-txt"></textarea>
-							<button class="contacts-button">Отправить</button>
+							<form class="form" name="myForm" method="post" action="mail.php">
+								<p>Если есть что-то, о чем вы хотите поговорить, пожалуйста, не стесняйтесь связаться с
+									нами. Даже если вы просто хотите поздороваться, мы с нетерпением ждём от вас
+									сообщения!
+								</p>
+								<input type="text" name="name" class="form-name" placeholder="Ваше имя" required>
+								<input type="email" name="mail" class="form-mail" placeholder="email" required>
+								<input type="phone" name="phone" class="form-phone" placeholder="Номер телефона">
+								<textarea class="form-txt" name="comment" placeholder="Сообщение" required></textarea>
+								<div class="button-row">
+									<input class="contacts-button" type="submit" value="Отправить!">
+									<input class="contacts-button" type="reset" value="Очистить">
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>

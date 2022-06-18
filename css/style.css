@@ -575,12 +575,19 @@ body._lock {
   margin: 10px 0px;
 }
 
-.form-name {
-  height: 35px;
-  width: 350px;
-  border: 1px solid black;
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
 }
 
+.form-name,
+.form-phone,
 .form-mail {
   height: 35px;
   width: 350px;
@@ -591,6 +598,13 @@ body._lock {
   width: 100%;
   min-height: 200px;
   border: 1px solid black;
+  resize: none;
+}
+
+.button-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contacts-button {
